@@ -1,0 +1,112 @@
+<% include layout/header.ejs %>
+
+<!-- Top menu -->
+<nav class="navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Andia - a super cool design agency...</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="top-navbar-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
+                        <i class="fa fa-home"></i><br>Home <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/index-2">Home 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/portfolio"><i class="fa fa-camera"></i><br>Portfolio</a>
+                </li>
+                <li>
+                    <a href="/services"><i class="fa fa-tasks"></i><br>Services</a>
+                </li>
+                <li>
+                    <a href="/about"><i class="fa fa-user"></i><br>About</a>
+                </li>
+                <li class="active">
+                    <a href="/contact"><i class="fa fa-envelope"></i><br>Contact</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
+                        <i class="fa fa-paperclip"></i><br>Pages <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/pricing-tables">Pricing tables</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Title -->
+<div class="page-title-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 wow fadeIn">
+                <i class="fa fa-envelope"></i>
+                <h1>Contact Us /</h1>
+                <p>Here is how you can contact us</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us -->
+<div class="contact-us-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 contact-form wow fadeInLeft">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et.
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper <a href="">suscipit
+                    lobortis</a>
+                    nisl ut aliquip ex ea commodo consequat.
+                </p>
+                <form role="form" action="/contact" method="post">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" name="name" placeholder="Enter your name..." class="contact-name"
+                               id="contact-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="text" name="email" placeholder="Enter your email..." class="contact-email"
+                               id="contact-email">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone">Phone</label>
+                        <input type="text" name="phone" placeholder="Your phone..." class="contact-phone"
+                               id="contact-phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea name="message" placeholder="Your message..." class="contact-message"
+                                  id="contact-message"></textarea>
+                    </div>
+                    <input type="submit" class="btn" value="Send">
+                </form>
+            </div>
+            <div class="col-sm-5 contact-address wow fadeInUp">
+                <h3>We Are Here</h3>
+                <div class="map"></div>
+                <h3>Address</h3>
+                <p>Via Principe Amedeo 9 <br> 10100, Torino, TO, Italy</p>
+                <p>Phone: 0039 333 12 68 347</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include layout/footer.ejs %>
